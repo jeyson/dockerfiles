@@ -1,10 +1,14 @@
 ---
 name: Tomcat 7
-description: 'tomcat 7 '
+description: ''
 keywords: ''
 type: Tomcat
-documentation: ''
+documentation: |-
+  ports:
+    - host_port: '8080'
+      container_port: '8080'
+      proto: TCP
 images:
-- name: library_tomcat7_latest
-  source: repository.bonmarketplace.com.br/library/tomcat7:latest
+- name: repository.bonmarketplace.com.br_library_freight_latest
+  source: repository.bonmarketplace.com.br/library/freight:latest
   type: Default
